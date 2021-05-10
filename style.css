@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    background:#212121;
+    font-family: 'Lato', sans-serif;
+}
+
+/* CONTAINER */
+
+.flex__container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 10px 10px 15px  rgba(0, 0, 0, 0.623);
+}
+
+
+/* LOGIN FORM */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+
+.form h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 40px;
+
+}
+
+.box {
+    margin: 15px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 70%;
+    border: 2px solid #000000;
+    background: none;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.box:hover {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+}
+
+.box::placeholder {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
+.button {
+    padding: 12px 30px;
+    width: 40%;
+    margin-top: 40px;
+    background: #000000;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 300;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: 2px solid #000000;
+    
+}
+
+.form a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+.form a:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+
+/* RIGHT SIDE */
+
+.side {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.side img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:700px) {
+    .flex__container {
+        flex-direction: column;
+        margin: auto;
+        height: 100vh;
+        align-items: center;
+    }
+    
+    .form {
+        width: 100%;
+        height: 60%;
+    }
+
+    .side {
+        height: 40%;
+        width: 100%;
+    }
+
+    .box {
+        margin: 10px;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+
+    .form a {
+        margin-top: 12px;
+    }
+}
